@@ -53,7 +53,21 @@ public abstract class AbstractEnemy implements Enemy {
         if (ability != null) this.abilities.add(ability);
     }
 
-    public void setElement(String element) { this.element = element; }
+    public void setElement(String element) {
+        this.element = element;
+    }
+
+    public void setAbilities(List<Ability> abilities) {
+        this.abilities = new ArrayList<>(abilities);
+    }
+
+    public void setAI(String aiBehavior) {
+        this.aiBehavior = aiBehavior;
+    }
+
+    public void setLootTable(LootTable lootTable) {
+        this.lootTable = lootTable;
+    }
 
     public void displayInfo() {
         System.out.println("=== " + name + " ===");

@@ -21,4 +21,7 @@ public interface Enemy {
     void multiplyStats(double multiplier);
     void addAbility(Ability ability);
     void setElement(String element);
+    void setAbilities(List<Ability> abilities);
+    void setAI(String aiBehavior);
+    void setLootTable(LootTable lootTable);
 }
